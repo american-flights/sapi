@@ -9,5 +9,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="american-flights-sapiFlow" doc:id="d75ecbb1-d084-43ea-a299-e0ac858b34a7" >
 		<http:listener doc:name="Listener" doc:id="0a079fc1-17c8-4054-8ded-73d4927d3285" config-ref="HTTP_Listener_config" path="/hi"/>
+		<logger level="INFO" doc:name="Logger" doc:id="6b82bc2a-11b6-4cc1-b3ad-ac27c4c1e1e7" message="hi"/>
 	</flow>
 </mule>
